@@ -202,3 +202,268 @@
     font-weight: 700;
     color: #F10215;
 }
+
+
+
+/*main 部分*/
+.main{
+    width: 100%;
+    height: 470px;
+    background-color: pink;
+    margin-top: 15px;
+    position: relative;
+}
+.main-ad{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 470px;
+    width: 80px;
+    background: url("../images/main-ad.webp") no-repeat right top;
+}
+
+.main-ad img{
+    position: absolute;
+    left: 80px;
+    top: 0;
+    width: 0;
+    height: 470px;
+    transition: all 0.2s linear;
+    z-index: 1000;
+}
+
+.main-ad:hover img{
+    width: 790px;
+}
+
+.main .w{
+    height: 470px;
+    background-color: purple;
+}
+
+.left-nav{
+    width: 188px;
+    height: 453px;
+    padding-top: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #cccccc;
+    position: relative;
+    float: left;
+}
+
+
+.left-nav>li{
+    width: 170px;
+    padding-left: 20px;
+    height: 25px;
+    font-size: 14px;
+    color: #636363;
+    line-height: 25px;
+}
+
+.left-nav>li:hover{
+    background-color: #cccccc;
+}
+
+.left-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #636363;
+}
+.left-nav a:hover {
+    color: #F10215;
+}
+
+
+.nav-more{
+    width: 1000px;
+    height: 470px;
+    position: absolute;
+    left: 189px;
+    top: -1px;
+    background-color: #fff;
+    border: 1px solid #999999;
+    display: none;
+    z-index: 1000;
+}
+
+.left-nav-more{
+    width: 795px;
+    height: 450px;
+    float: left;
+    padding: 20px 0 0 15px;
+}
+
+.right-img{
+    width: 190px;
+    height: 470px;
+    float: left;
+}
+
+.left-nav-more li .title{
+    float: left;
+    padding: 2px 8px;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.left-nav-more li{
+    margin: 8px 0;
+}
+.left-nav-more li a{
+    display: inline-block;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+.left-nav-more li .lis{
+    float: left;
+    width: 700px;
+}
+.left-nav-more li .first{
+    font-weight: 700;
+    color: #000000;
+    margin-left: 30px;
+    margin-right: 10px;
+    text-align: right;
+    float: left;
+}
+
+.right-img div{
+    width: 180px;
+    height: 134px;
+    margin: 10px auto;
+    text-align: center;
+}
+.right-img .top{
+    height: 160px;
+}
+.right-img .top img{
+    margin: -1px;
+}
+
+.main .slider{
+    width: 590px;
+    height: 470px;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+
+.images img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.images img.current{
+    display: block;
+}
+
+.arr-left,.arr-right{
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 35px;
+    background: rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 35px;
+}
+.arr-left{
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+.arr-right{
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+.arr-left:hover,.arr-right:hover{
+    background: rgba(0,0,0,.8);
+}
+
+.choose{
+    width: 98px;
+    height: 15px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.choose .outer{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0,0,0,.3);
+    float: left;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+.outer.current .inner{
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px auto;
+}
+
+.three-imgs{
+    width: 190px;
+    height: 470px;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+
+.three-imgs>div{
+    width: 190px;
+    height: 150px;
+    background-color: pink;
+    position: relative;
+}
+
+.middle-imgs{
+    margin: 10px 0;
+}
+
+
+.three-imgs img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 190px;
+    display: none;
+}
+.three-imgs img.current{
+    display: block;
+}
+
+.left-slider,.right-slider{
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 35px;
+    background: rgba(0,0,0,0.6);
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 35px;
+}
+.left-slider{
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+.right-slider{
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+.mask{
+    width: 190px;
+    height: 150px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0);
+}
