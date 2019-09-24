@@ -81,5 +81,20 @@
     },false)
 })());
 
+//购物车
+((function () {
+    var cart = document.querySelector(".cart");
+    cart.addEventListener("mouseover",function () {
+        cart.style.border = "1px solid #F10215";
+        cart.style.borderBottom = "0";
+        document.querySelector(".dropdown-cart").style.display = "block";
+
+    },false);
+    cart.addEventListener("mouseout",function () {
+        document.querySelector(".dropdown-cart").style.display = "none";
+        cart.style.border = "1px solid #999";
+    },false)
+})());
+
 
 
