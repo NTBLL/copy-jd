@@ -5,6 +5,7 @@
         document.querySelector(".top-ad").style.display = "none";
     }, false);
 }());
+
 // 头部左边坐标
 ((function () {
     var currentPosition = document.querySelector(".position").children[1];
@@ -24,3 +25,61 @@
         positions.style.display = "none";
     })
 })());
+
+// 京东更多信息
+((function () {
+    var jJd = document.querySelector(".J_jd");
+    jJd.addEventListener("mouseover",function () {
+        document.querySelector(".my-jd").style.display = "block";
+    },false)
+    jJd.addEventListener("mouseout",function () {
+        document.querySelector(".my-jd").style.display = "none";
+    },false)
+})());
+
+//企业采购更多信息
+((function () {
+    var jEnterpirse = document.querySelector(".J_enterprise");
+    jEnterpirse.addEventListener("mouseover",function () {
+        document.querySelector(".enterprise").style.display = "block";
+    },false)
+    jEnterpirse.addEventListener("mouseout",function () {
+        document.querySelector(".enterprise").style.display = "none";
+    },false)
+})());
+
+//客服服务更多信息
+((function () {
+    var jService = document.querySelector(".J_service");
+    jService.addEventListener("mouseover",function () {
+        document.querySelector(".service").style.display = "block";
+    },false)
+    jService.addEventListener("mouseout",function () {
+        document.querySelector(".service").style.display = "none";
+    },false)
+})());
+
+//网站导航更多信息
+((function () {
+    var jWebnav = document.querySelector(".J_webnav");
+    jWebnav.addEventListener("mouseover",function () {
+        document.querySelector(".webnav").style.display = "block";
+    },false)
+    jWebnav.addEventListener("mouseout",function () {
+        document.querySelector(".webnav").style.display = "none";
+    },false)
+})());
+
+//京东二维码
+((function () {
+    var erweima = document.querySelector(".erweima");
+    erweima.addEventListener("mouseover",function () {
+        document.querySelector(".more-erweima").style.display = "block";
+    },false)
+    erweima.addEventListener("mouseout",function () {
+        document.querySelector(".more-erweima").style.display = "none";
+    },false)
+})());
+
+
+
