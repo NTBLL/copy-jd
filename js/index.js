@@ -293,6 +293,18 @@
 })());
 
 
+
+//tab栏切换
+((function () {
+    $(".tab-show").on("mouseenter",function () {
+        $(this).find("a").addClass("active").end()
+            .find(".tab-content").addClass("show-content");
+        $(this).siblings().find("a").removeClass("active");
+        $(this).siblings().find(".tab-content").removeClass("show-content");
+    });
+})());
+
+
 //格式化时间
 function parseTime(time) {
     var hours = Math.floor(time / 3600);
