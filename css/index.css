@@ -209,7 +209,6 @@
 .main{
     width: 100%;
     height: 470px;
-    background-color: pink;
     margin-top: 15px;
     position: relative;
 }
@@ -238,7 +237,6 @@
 
 .main .w{
     height: 470px;
-    background-color: purple;
 }
 
 .left-nav{
@@ -419,7 +417,6 @@
 .three-imgs>div{
     width: 190px;
     height: 150px;
-    background-color: pink;
     position: relative;
 }
 
@@ -466,4 +463,440 @@
     left: 0;
     top: 0;
     background: rgba(0,0,0,0);
+}
+
+.right-info{
+    width: 190px;
+    height: 470px;
+    float: left;
+    margin-left: 10px;
+    background-color: #FFFFFF;
+}
+
+.user-login{
+    width: 190px;
+    height: 100px;
+}
+.login-info{
+    width: 170px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.login-info .small-logo{
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.small-logo img{
+    width: 40px;
+    height: 40px;
+}
+.login-info .login-text{
+    padding-top: 4px;
+    width: 100px;
+    height: 55px;
+    margin-left: 5px;
+    float: left;
+}
+.login-info a{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #999999;
+    vertical-align: top;
+}
+.login-info a:hover{
+    color: #F10215;
+}
+.welfare{
+    width: 170px;
+    height: 29px;
+    margin: 3px auto 0;
+    border-bottom: 1px solid #999999;
+}
+.welfare a{
+    float: left;
+    width: 70px;
+    height: 20px;
+    margin: -4px 5px 0;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 1px 2px;
+}
+.welfare a:first-child{
+    color: #FFFFFF;
+    background-color: #F10215;
+}
+.welfare a:last-child{
+    color: #e5d790;
+    background-color: #333333;
+}
+.welfare a:last-child:hover{
+    color: #FFFFFF;
+    background-color: #F10215;
+}
+.news{
+    width: 170px;
+    height: 140px;
+    margin: 0 auto;
+}
+.news h6{
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+}
+.news h6 span{
+    float: left;
+}
+.news h6 a{
+    float: right;
+    text-decoration: none;
+    color: #999999;
+}
+.news h6 a:hover{
+    color: #F10215;
+}
+.news-info{
+    height: 100px;
+    width: 170px;
+}
+.news-info li{
+    height: 20px;
+    line-height: 20px;
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999999;
+}
+.news-info span{
+    display: inline-block;
+    background-color: rgba(255,37,27,0.08);
+    color: #F10215;
+    padding: 0 2px;
+    margin-right: 9px;
+}
+.news-info li a{
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none;
+}
+.other-function{
+    width: 170px;
+    height: 219px;
+    border-top: 1px solid #999999;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+.other-function li{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 2px 3px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+
+.other-function img{
+    width: 28px;
+    height: 28px;
+}
+.other-function span{
+    position: absolute;
+    left: 11px;
+    top: 30px;
+    width: 28px;
+    height: 20px;
+    line-height: 20px;
+}
+.other-function a{
+    color: #333333;
+    text-decoration: none;
+    font-size: 12px;
+}
+.other-function a:hover{
+    color: #F10215;
+}
+
+/*京东秒杀模块*/
+.jd-ms{
+    width: 1190px;
+    height: 260px;
+    margin: 20px auto 0;
+}
+
+.ms-time{
+    cursor: pointer;
+    width: 190px;
+    height: 260px;
+    background: url("../images/jd-ms-time.png") no-repeat;
+    float: left;
+    position: relative;
+}
+
+.ms-title{
+    position: absolute;
+    font-size: 32px;
+    font-weight: 700;
+    left: 0;
+    top: 40px;
+    color: #FFFFFF;
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.highlight{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.ms-desc{
+    position: absolute;
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 190px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    bottom: 60px;
+    left: 0;
+}
+.time{
+    position: absolute;
+    font-size: 20px;
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    bottom: 20px;
+    left: 0;
+}
+.time-hfs{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.time-space{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.ms-goods01{
+    width: 800px;
+    height: 260px;
+    float: left;
+    position: relative;
+}
+
+.goods-list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 260px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+.goods{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3200px;
+    height: 260px;
+}
+
+.goods li{
+    width: 183px;
+    height: 240px;
+    margin: 10px 8px;
+    float: left;
+    border-right: 1px solid rgba(0,0,0,.08);
+}
+
+.goods-img{
+    width: 140px;
+    height: 140px;
+    margin: 5px auto 0;
+    display: block;
+}
+
+.goods-desc{
+    display: block;
+    width: 170px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333333;
+    font-size: 12px;
+}
+
+.goods-price{
+    width: 170px;
+    margin: 10px auto 0;
+    text-align: center;
+    height: 26px;
+    display: block;
+    text-decoration: none;
+    line-height: 26px;
+    position: relative;
+    border: 1px solid #F10215;
+}
+.goods-price::after{
+    display: block;
+    content: "";
+    border-width: 13px;
+    border-style: solid;
+    border-color: #F10215 transparent #FFFFFF #F10215;
+    position: absolute;
+    left: 82px;
+    top: 0;
+}
+.now-price{
+    width: 87px;
+    height: 26px;
+    background-color: #F10215;
+    display: block;
+    float: left;
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding-right: 5px;
+}
+.old-price{
+    width: 78px;
+    height: 26px;
+    background-color: #FFFFFF;
+    display: block;
+    float: left;
+    color: #999999;
+    font-size: 12px;
+}
+
+.goods-arr .goods-arr-left,
+.goods-arr .goods-arr-right{
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    background-color: rgba(0,0,0,.3);
+    top: 50%;
+    margin-top: -15px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+.goods-arr .goods-arr-left{
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+.goods-arr .goods-arr-right{
+    right: 0;
+    margin-right: 9px;
+    border-radius: 10px 0 0 10px;
+}
+
+.ms-goods02{
+    width: 200px;
+    height: 240px;
+    background-color: #FFFFFF;
+    float: left;
+    padding: 10px 0;
+    position: relative;
+}
+
+.ms-goods02 .goods2-list{
+    position: absolute;
+    width: 180px;
+    height: 240px;
+    top: 10px;
+    left: 10px;
+    background: -webkit-linear-gradient(bottom,#E6E6FA 0%,#FFF 40%);
+    overflow: hidden;
+}
+.goods2{
+    width: 360px;
+    height: 240px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.goods2 li{
+    width: 180px;
+    height: 240px;
+    float: left;
+}
+
+.goods2-desc,.goods2-price,.href-btn{
+    font-size: 14px;
+    text-decoration: none;
+    color: #999999;
+    display: block;
+    width: 180px;
+    margin-top: -5px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.goods2-price{
+    margin-top: 1px;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.href-btn{
+    width: 80px;
+    border: 1px solid #F10215;
+    margin: 8px auto;
+    color: #F10215;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.href-btn:hover{
+    color: #FFFFFF;
+    background-color: #F10215;
+}
+
+.circles{
+    position: absolute;
+    width: 30px;
+    height: 9px;
+    left: 75px;
+    bottom: 15px;
+}
+
+.circle{
+    width: 9px;
+    height: 9px;
+    background-color: #cccccc;
+    float: left;
+    margin:0 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle.current{
+    background-color: #F10215;
 }
