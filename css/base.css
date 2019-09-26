@@ -593,6 +593,9 @@ dd,dt,dl{
     text-decoration: none;
     color: #333333;
 }
+.copyright-link a:hover{
+    color: #F10215;
+}
 .p-space{
     display: inline-block;
     width: 1px;
@@ -631,7 +634,4 @@ dd,dt,dl{
 }
 .brands a:nth-child(5){
     background-position:-208px -148px;
-}
-a:hover{
-    color: #F10215;
 }

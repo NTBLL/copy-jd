@@ -293,14 +293,76 @@
 })());
 
 
-
 //tab栏切换
 ((function () {
-    $(".tab-show").on("mouseenter",function () {
-        $(this).find("a").addClass("active").end()
-            .find(".tab-content").addClass("show-content");
-        $(this).siblings().find("a").removeClass("active");
-        $(this).siblings().find(".tab-content").removeClass("show-content");
+    $(".tab-show").on("mouseenter", function () {
+        $(this).children("a").addClass("active").end()
+            .children(".tab-content").addClass("show-content");
+        $(this).siblings().children("a").removeClass("active");
+        $(this).siblings().children(".tab-content").removeClass("show-content");
+    });
+})());
+
+
+//发现好货
+((function () {
+    //计算滚动条的长度
+    var barWidth = $(".good-goods").width() * $(".scroll").width() / $(".list").width();
+    $(".bar").width(barWidth);
+
+    var contentMax = ($(".list").width() - $(".good-goods").width());
+    var barMax = $(".scroll").width() - $(".bar").width();
+
+    var timeId = setInterval(function () {
+        if (parseInt($(".list").css("left")) <= -1980) {
+            $(".list").css("left", 0);
+            $(".bar").css("left", 0);
+        }
+        var move = parseInt($(".list").css("left")) - 94;
+        $(".list").stop().animate({left: move}, 500, "linear");
+        var barMove = move * barMax / contentMax;
+        $(".bar").stop().animate({left: -barMove}, 500, "linear");
+    }, 500);
+
+    $(".search-goods").mouseenter(function () {
+        $(".my-scroll").show();
+    }).mouseleave(function () {
+        $(".my-scroll").hide();
+    });
+
+    $(".bar").on("mousedown", function (e) {
+        var spaceX = e.clientX - this.offsetLeft;
+        $(".my-scroll").show();
+        $(document).on("mousemove", function (e) {
+            $(".my-scroll").show();
+            var moveX = e.clientX - spaceX;
+            moveX = moveX < 0 ? 0 : moveX;
+            window.getSelection? window.getSelection().removeAllRanges():document.selection.empty();
+            moveX = moveX > ($(".scroll").width() - $(".bar").width()) ? $(".scroll").width() - $(".bar").width() : moveX;
+            $(".bar").css("left", moveX);
+            var contentMove = moveX*contentMax/barMax;
+            $(".list").css("left",-contentMove);
+        });
+    });
+    $(document).on("mouseup",function () {
+        $(document).off("mousemove");
+        $(".my-scroll").hide();
+    });
+
+    $(".search-goods").on("mouseenter",function () {
+        clearInterval(timeId);
+    });
+    $(".search-goods").on("mouseleave",function () {
+        timeId = setInterval(function () {
+            if(parseInt($(".list").css("left")) <= -1980){
+                $(".list").css("left",0);
+                $(".bar").css("left",0);
+            }
+            var move = parseInt($(".list").css("left")) - 94;
+            $(".list").stop().animate({left: move},500,"linear");
+            var barMove = move*barMax/contentMax;
+            $(".bar").stop().animate({left:-barMove},500,"linear");
+        },500);
     });
 })());
 

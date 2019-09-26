@@ -1188,3 +1188,140 @@
     margin: -10px 0 0 24px;
 }
 
+
+/*发现好货模块*/
+.search-goods{
+    width: 1190px;
+    height: 260px;
+    margin: 15px auto 0;
+}
+
+
+
+.search-left{
+    width: 190px;
+    height: 260px;
+    float: left;
+    position: relative;
+}
+.search-text{
+    position: absolute;
+    width: 160px;
+    height: 90px;
+    left: 50%;
+    margin-left: -80px;
+    top: 20px;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+.search-text:hover span{
+    background-color: #F10215;
+}
+.search-text h3{
+    padding-left: 5px;
+    font-size: 32px;
+    margin: 5px 0 0;
+    color: #FFFFFF;
+}
+.search-text p{
+    font-size: 16px;
+    display: inline-block;
+    width: 80px;
+    height: 22px;
+    margin-left: 5px;
+    margin-top: 10px;
+    color: #e3e4e5;
+}
+.search-text .search-circle{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 13px;
+    border-radius: 50%;
+    font-size: 12px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.search-right{
+    width: 990px;
+    height: 260px;
+    float: right;
+    position: relative;
+}
+
+.good-goods{
+    width: 990px;
+    height: 260px;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.list{
+    height: 180px;
+    width: 2970px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.list li{
+    float: left;
+    width: 198px;
+    height: 180px;
+    cursor: pointer;
+}
+.list a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    display: inline-block;
+    width: 198px;
+    text-align: center;
+}
+.list li:hover>a{
+    color: #F10215;
+}
+.list li:nth-child(odd) img{
+    margin-left: 25px;
+    margin-bottom: 12px;
+    display: block;
+}
+.list li:nth-child(even) img{
+    display: block;
+    margin-left: 25px;
+    margin-top: 12px;
+}
+
+.my-scroll{
+    position: absolute;
+    left: 45px;
+    bottom: 10px;
+    width: 900px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll{
+    width: 900px;
+    margin-top: 8px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #e3e4e5;
+    position: relative;
+}
+.bar{
+    width: 100px;
+    height: 10px;
+    background-color: #999999;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    border-radius: 6px;
+}
+
+
